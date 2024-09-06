@@ -1,5 +1,6 @@
 <?php 
-header('Content-Type: Application/json');
+header("Access-Control-Allow-Origin: *");
+header('Content-Type: application/json');
 
 
     $metodo = $_SERVER['REQUEST_METHOD'];

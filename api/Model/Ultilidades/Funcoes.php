@@ -10,10 +10,9 @@
         $respostaArray = [
             'codigo' => $resposta->getCodigo(),
             'mensagem' => $resposta->getMensagem(),
-            'mensagemPersonalizada' => $mensagemPersonalizada
+            'mensagem:' => $mensagemPersonalizada
         ];
 
         // Converte o array em JSON e o retorna
         return json_encode($respostaArray);
     }
-
