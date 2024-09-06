@@ -1,5 +1,4 @@
 <?php 
-    $requisicao = $_REQUEST;
-    $metodo = $requisicao["REQUEST_METHOD"];
+    $metodo = $_SERVER['REQUEST_METHOD'];
 
     echo $metodo;
