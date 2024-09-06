@@ -2,7 +2,7 @@
     $metodo = $_SERVER['REQUEST_METHOD'];
     echo $metodo;
 
-    require_once __DIR__.'/../Model/Resposta.php';
+    require_once __DIR__.'/Model/Resposta.php';
     
     switch ($metodo) {
         case 'GET':
