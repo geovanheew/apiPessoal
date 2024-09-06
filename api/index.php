@@ -9,7 +9,8 @@ header('Content-Type: Application/json');
     
     switch ($metodo) {
         case 'GET':
-            echoJson("METHOD: GET", '200');
+            echo echoJson("METHOD: GET", '200');
+            echo 'teste';
             break;
         case 'POST':
             break;
