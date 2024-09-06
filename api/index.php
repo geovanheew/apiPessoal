@@ -1,5 +1,7 @@
 <?php 
-header('Content-Type: Application/json'); 
+header('Content-Type: Application/json');
+
+
     $metodo = $_SERVER['REQUEST_METHOD'];
 
     require_once __DIR__.'/Model/Ultilidades/Resposta.php';
