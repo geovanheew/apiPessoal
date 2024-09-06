@@ -1,11 +1,13 @@
 <?php 
+header('Content-Type: Application/json'); 
     $metodo = $_SERVER['REQUEST_METHOD'];
-    echo $metodo;
 
-    require_once __DIR__.'/Model/Resposta.php';
+    require_once __DIR__.'/Model/Ultilidades/Resposta.php';
+    require_once __DIR__.'/Model/Ultilidades/Funcoes.php';
     
     switch ($metodo) {
         case 'GET':
+            echoJson("METHOD: GET", '200');
             break;
         case 'POST':
             break;

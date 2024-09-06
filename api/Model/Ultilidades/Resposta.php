@@ -48,6 +48,14 @@ class Resposta {
         return new self($codigo, $mensagem);
     }
 
+    public function getCodigo() {
+        return $this->codigo;
+    }
+
+    public function getMensagem() {
+        return $this->mensagem;
+    }
+
     // Método para exibir a resposta em formato JSON
     public function exibirResposta() {
         return json_encode([
